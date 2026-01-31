@@ -1,0 +1,37 @@
+.<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mano el. parduotuvė</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒 Mano el. parduotuvė</h1>
+    <div id="cart">Krepšelis: <span id="cart-count">0</span></div>
+</header>
+
+<main class="products">
+    <div class="product">
+        <h3>Produktas A</h3>
+        <p>Kaina: 20 €</p>
+        <button onclick="addToCart('Produktas A', 20)">Į krepšelį</button>
+    </div>
+
+    <div class="product">
+        <h3>Produktas B</h3>
+        <p>Kaina: 35 €</p>
+        <button onclick="addToCart('Produktas B', 35)">Į krepšelį</button>
+    </div>
+</main>
+
+<section class="cart">
+    <h2>Krepšelis</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Iš viso:</strong> <span id="total">0</span> €</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
