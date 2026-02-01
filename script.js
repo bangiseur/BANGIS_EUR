@@ -9,7 +9,7 @@ function addToCart(name, price) {
     total += price;
 
     document.getElementById('cart-count').innerText = cart.length;
-    document.getElementById('total').innerText = total.toFixed(2); // 2 skaitmenys po kablelio
+    document.getElementById('total').innerText = total.toFixed(2);
 
     renderCart();
 }
