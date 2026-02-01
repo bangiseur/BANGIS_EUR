@@ -1,9 +1,17 @@
-.<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
     <title>BANGIS_EUR</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS biblioteka -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("TAVO_PUBLIC_KEY"); // 👈 įrašyk savo EmailJS PUBLIC_KEY
+        })();
+    </script>
 </head>
 <body>
 
@@ -43,13 +51,11 @@
         <button onclick="addToCart('Rugiagėlių arbata', 50)">Į krepšelį</button>
     </div>
 
-    
  <div class="product">
         <h3>Keptos rugiagėlės</h3>
         <p>Kaina: 250 €</p>
         <button onclick="addToCart('Keptos rugiagėlės', 250)">Į krepšelį</button>
     </div>
-    
 </main>
 
 <section class="cart">
@@ -58,6 +64,19 @@
     <p><strong>Iš viso:</strong> <span id="total">0</span> €</p>
 </section>
 
+<!-- Komentarų skyrius -->
+<section class="comment-section">
+    <h2>Palik komentarą</h2>
+    <input type="email" id="commentEmail" placeholder="Tavo el. paštas (nebūtina)">
+    <br><br>
+    <textarea id="commentText" placeholder="Parašyk komentarą..." rows="5" cols="40"></textarea>
+    <br><br>
+    <button onclick="sendComment()">Siųsti komentarą</button>
+</section>
+
+<!-- Script -->
 <script src="script.js"></script>
+
 </body>
 </html>
+
