@@ -105,7 +105,7 @@ function sendComment() {
         return;
     }
 
-    emailjs.send("service_5om41mk", "template_qoj6hgv", {
+    emailjs.send("service_prjshlp", "template_qoj6hgv", {
         email: email,
         comment: comment
     }).then(() => {
