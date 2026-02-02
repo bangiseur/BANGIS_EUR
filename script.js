@@ -105,7 +105,7 @@ function sendComment() {
         return;
     }
 
-    emailjs.send("TAVO_SERVICE_ID", "TAVO_KOMENTARO_TEMPLATE_ID", {
+    emailjs.send("service_5om41mk", "template_qoj6hgv", {
         email: email,
         comment: comment
     }).then(() => {
