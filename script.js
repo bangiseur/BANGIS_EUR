@@ -106,8 +106,8 @@ function sendComment() {
     }
 
     emailjs.send("service_prjshlp", "template_qoj6hgv", {
-        email: commentEmail,
-        comment: commentText
+        email: email,
+        comment: comment
     }).then(() => {
         alert("Komentaras išsiųstas!");
         document.getElementById("commentEmail").value = "";
