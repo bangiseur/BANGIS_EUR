@@ -73,7 +73,7 @@ function buy() {
         orderText += `${item} – ${cart[item].qty} vnt.\n`;
     }
 
-    emailjs.send("TAVO_SERVICE_ID", "TAVO_PIRKIMO_TEMPLATE_ID", {
+    emailjs.send("service_prjshlp", "template_3tqcomc", {
         buyer_email: buyerEmail,
         order: orderText,
         total: total.toFixed(2)
