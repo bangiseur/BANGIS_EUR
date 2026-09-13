@@ -1,116 +1,158 @@
 <!DOCTYPE html>
-<html lang="lt">
-<head>
-    <meta charset="UTF-8">
-    <title>BANGIS_EUR</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- EmailJS biblioteka -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>BANGIS_EUR</title>
+        <script src="script.js"></script>
+        <link href="styles/global.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css? family=Anton|Oswald" rel="stylesheet" />
+        <meta name="description" content="bangis_eur">
+        <script src="script.js">
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
         (function(){
             emailjs.init("jJvBRz0tQoaQdYc_b"); // 👈 įrašyk savo EmailJS PUBLIC_KEY
         })();
     </script>
-</head>
-<body>
-
-<header>
-    <h1>BANGIS_EUR</h1>
-    <h3>Pasiruošk mokyklai! Paskambink mums telefonu +37062585428 ir gauk rankų darbo trintuką dovanų!</h3>
-    
-    <div id="cart">Krepšelis: <span id="cart-count">0</span></div>
-</header>
-<h3>Santechnikos akcija! Pirk santechnikos raktą ir gauk kanalizacijos pompą dovanų!</h3>
-<main class="products">
-    
-    <div class="product">
-        <h3>Slaimas</h3>
-        <p>Kaina: 3 €</p>
-        <button onclick="addToCart('Slaimas', 3)">Į krepšelį</button>
-    </div>
-    
-    <div class="product">
-        <h3>Svirpliai</h3>
-        <p>Kaina: 3 €</p>
-        <button onclick="addToCart('Svirpliai', 3)">Į krepšelį</button>
-    </div>
-
-     <div class="product">
-        <h3>Guminukas vaisių apvalkale</h3>
-        <p>Kaina: 0.5 €</p>
-        <button onclick="addToCart('Guminukas vaisių apvalkale', 0.50)">Į krepšelį</button>
-    </div>
-
-
-
-
-    <div class="product">
-        <h3>Antistresinis žaislas "SQUISHY DUMPLING", mažas</h3>
-        <p>Kaina: 3 €</p>
-        <button onclick="addToCart('Antistresinis žaislas SQUISHY DUMPLING, mažas', 3)">Į krepšelį</button>
-    </div>
-
-    <div class="product">
-        <h3>Antistresinis žaislas "SQUISHY DUMPLING", vidutinis</h3>
-        <p>Kaina: 10 €</p>
-        <button onclick="addToCart('Antistresinis žaislas SQUISHY DUMPLING, vidutinis', 7)">Į krepšelį</button>
-    </div>
-
-    <div class="product">
-        <h3>Antistresinis žaislas "SQUISHY DUMPLING", milžiniškas </h3>
-        <p>Kaina: 20 €</p>
-        <button onclick="addToCart('Antistresinis žaislas SQUISHY DUMPLING, milžiniškas', 20)">Į krepšelį</button>
-    </div>
-
-    
-    
-    <div class="product"
-        <h3>Sausainių Monstro mėgstamas didelis sviestinis sausainis su šokoladu</h3>
-        <p>Kaina: 2 €</p>
-        <button onclick="addToCart('Sausainių Monstro mėgstamas didelis sviestinis sausainis su šokoladu', 2)">Į krepšelį</button>
-    </div>
-    <div class="product">
-        <h3>Santechnikos raktas</h3>
-        <p>Kaina: 10 €</p>
-        <button onclick="addToCart('Santechnikos raktas', 10)">Į krepšelį</button>
-    </div>
-    <div class="product">
-        <h3>Kanalizacijos pompa</h3>
-        <p>Kaina: 5 €</p>
-        <button onclick="addToCart('Kanalizacijos pompa', 5)">Į krepšelį</button>
-    </div>
-
-    
-</main>
-
-<section class="cart">
-    <h2>Krepšelis</h2>
-    <ul id="cart-items"></ul>
-    <p><strong>Iš viso:</strong> <span id="total">0</span> €</p>
+    </head>
+    <body>
+        <div id = "promo" >
+            <div>Pasiruošk mokyklai! Paskambink mums telefonu +37062585428 ir gauk rankų darbo trintuką dovanų!</div>
+            <div>Santechnikos akcija! Pirk santechnikos raktą ir gauk kanalizacijos pompą dovanų!</div>
+        </div>
+        <div id="topMenu">
+            <div class="wrap">
+                <div id="toplinks">
+                    <ul>
+                        <li>
+                            <a href="index.html">Pagrindinis</a>
+                        </li>
+                        <li>
+                            <a class= "nav-link" href="apie-mus">Apie mus</a>
+                        </li>
+                        <li>
+                            <a href="parduotuve">Parduotuvė</a>
+                        </li>
+                        <li>
+                            <a href="kontaktai">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="logo" href="index.html">BANGIS_EUR</a>
+            </div>
+        </div>
+        <div class="wrap">
+            <div id="banner">
+                <h1 class="logo">BANGIS_EUR</h1>
+                <div id="action">
+                    <a href="parduotuve">Parduotuvė</a>
+                </div>
+            </div>
+            <div class="clear spacer v80"></div>
+            <div id="fishFeature" class="feature">
+                <div class="leftColumn">
+                    <div class="text">
+                        <h2>SMAGŪS VAIKŲ ŽAISLAI</h2>
+                        <div class="subHeading">KAD LAISVALAIKIS BŪTŲ SMAGUS</div>
+                        <hr />
+                        <p>Mūsų saugiausi ir smagiausi žaislai vaikams</p>
+                        <div class="spacer v40"></div>
+                        <a href="parduotuve">ŽAISLAI</a>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="clear spacer v20"></div>
+            <div id="fishImage" class="middleImage">
+                <!--<img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /> -->
+            </div>
+            <div class="spacer v80"></div>
+            <div id="dogFeature" class="feature">
+                <div class="leftColumn">
+                    <a class="featureImage">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D" />
+                    </a>
+                </div>
+                <div class="rightColumn">
+                    <div class="text">
+                        <h2>SKANŪS DESERTAI IR UŽKANDŽIAI</h2>
+                        <div class="subHeading">KAD NAMUOSE MAISTO NEPRITRŪKTŲ</div>
+                        <hr />
+                        <p>Skaniausi mūsų užkandžiai ir desertai</p>
+                        <div class="spacer v40"></div>
+                        <a href="parduotuve">MAISTO PREKĖS</a>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear spacer v80"></div>
+            <div class="clear"></div>
+            <div id="dogImage" class="middleImage">
+                <!-- <img src="https://images.unsplash.com/photo-1571865402713-98ba5a56f12b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNuYWNrfGVufDB8fDB8fHww" /> -->
+            </div>
+            <div class="spacer v80"></div>
+            <div id="birdFeature" class="feature">
+                <div class="leftColumn">
+                    <div class="text">
+                        <h2>KOKYBIŠKOS SANTECHNIKOS PREKĖS</h2>
+                        <div class="subHeading">KAD NEKILTŲ KANALIZACIJOS AR VANDENTIEKIO PROBLEMŲ</div>
+                        <hr />
+                        <p>Geriausios mūsų turimos lietuviškos santechnikos prekės</p>
+                        <div class="spacer v40"></div>
+                        <a href="parduotuve">SANTECHNIKOS PREKĖS</a>
+                    </div>
+                </div>
+                <div class="rightColumn">
+                    <a class="featureImage" src="/bird">
+                        <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                    </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            
+        </div> 
+        <div class="clear spacer v40"></div>
+       <div id="contactUs" class="feature">
+            <div class="leftColumn">
+                <div class="text">
+                    <h2>KONTAKTAI</h2>
+                    <hr />
+                    <p>
+                        TEL. : +37062585428
+                    </p>
+                    <p>
+                        EL. PAŠTAS : <a href="mailto:BANGISEUR@GMAIL.COM" class="emailLink">BANGISEUR@GMAIL.COM</a>
+                    </p>
+                     <section class="comment-section">
+                        <h2>Parašyk mums</h2>
+                        <input type="email" id="commentEmail" placeholder="Tavo el. paštas">
+                        <br><br>
+                        <textarea id="commentText" placeholder="Parašyk žinutę..." rows="5" cols="40"></textarea>
+                        <br><br>
+                        <button onclick="sendComment()">Siųsti žinutę</button>
 </section>
-
-<section class="buy-section">
-    <h2>Pirkti</h2>
-    <input type="email" id="buyerEmail" placeholder="Tavo el. paštas" required>
-    <br><br>
-    <button onclick="buy()">Pirkti</button>
-</section>
-
-    
-<!-- Komentarų skyrius -->
-<section class="comment-section">
-    <h2>Palik komentarą</h2>
-    <input type="email" id="commentEmail" placeholder="Tavo el. paštas (nebūtina)">
-    <br><br>
-    <textarea id="commentText" placeholder="Parašyk komentarą..." rows="5" cols="40"></textarea>
-    <br><br>
-    <button onclick="sendComment()">Siųsti komentarą</button>
-</section>
-
-<!-- Script -->
-<script src="script.js"></script>
-
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear spacer v80"></div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li>
+                <a href="siuntimas">Siuntimas</a>
+            </li>
+            <li>
+                <a href="duk">DUK</a>
+            </li>
+        </ul>
+    </div>
+    <div id="copyright">
+        <div>&copy; 2026 <span class="logo">BANGIS_EUR</span></div>
+    </div>
 </body>
 </html>
+
 
