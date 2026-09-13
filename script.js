@@ -101,7 +101,7 @@ function sendComment() {
     const comment = document.getElementById("commentText").value;
 
     if (comment.trim() === "") {
-        alert("Komentaras negali būti tuščias");
+        alert("Žinutė negali būti tuščia");
         return;
     }
 
@@ -109,11 +109,11 @@ function sendComment() {
         email: email,
         comment: comment
     }).then(() => {
-        alert("Komentaras išsiųstas!");
+        alert("Žinutė išsiųsta!");
         document.getElementById("commentEmail").value = "";
         document.getElementById("commentText").value = "";
     }, (err) => {
-        alert("Klaida siunčiant komentarą");
+        alert("Klaida siunčiant žinutę");
         console.error(err);
     });
 }
