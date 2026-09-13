@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="styles/global.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css? family=Anton|Oswald" rel="stylesheet" />
+    <title>BANGIS_EUR - Kontaktai</title>
+    <!--<link rel="icon" type="image/png"href="images/favicon.png" /> -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("jJvBRz0tQoaQdYc_b"); // 👈 įrašyk savo EmailJS PUBLIC_KEY
+        })();
+    </script>
+</head>
+<body>
+    <div id="contactUs" class="feature">
+            <div class="leftColumn">
+                <div class="text">
+                    <h2>KONTAKTAI</h2>
+                    <hr />
+                    <p>
+                        TEL. : +37062585428
+                    </p>
+                    <p>
+                        EL. PAŠTAS : <a href="mailto:BANGISEUR@GMAIL.COM" class="emailLink">BANGISEUR@GMAIL.COM</a>
+                    </p>
+                    <section class="comment-section">
+                        <h2>Parašyk mums</h2>
+                        <input type="email" id="commentEmail" placeholder="Tavo el. paštas">
+                        <br><br>
+                        <textarea id="commentText" placeholder="Parašyk žinutę..." rows="5" cols="40"></textarea>
+                        <br><br>
+                        <button onclick="sendComment()">Siųsti žinutę</button>
+</section>
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="clear spacer v80"></div>
+</body>
+</html>
