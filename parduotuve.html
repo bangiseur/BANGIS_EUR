@@ -20,12 +20,12 @@
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">SMAGU!</div>
         <h2>Šlykštukas SLAIMAS | 3 €</h2>
-        <select name ="gskonis">
+        <select name ="spalva">
             <option value="Šlykštukas SLAIMAS">Pasirinkite spalvą</option>
             <option value="Šlykštukas SLAIMAS, žalias be blizgučių">Žalia be blizgučių</option>
             <option value="Šlykštukas SLAIMAS, auksinis su blizgučiais">Aukso su blizgučiais</option>
         </select>
-        <button onclick="addToCart(, 3)">Į krepšelį</button>
+        <button onclick="addToCart({{spalva}}, 3)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">MAŽAS</div>
         <h2>Antistresinis žaislas MINKŠTASIS KOLDŪNAS | 3 €</h2>
