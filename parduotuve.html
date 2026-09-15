@@ -24,18 +24,21 @@
             <option value="Šlykštukas SLAIMAS, žalias be blizgučių">Žalia be blizgučių</option>
             <option value="Šlykštukas SLAIMAS, auksinis su blizgučiais">Aukso su blizgučiais</option>
         </select>
-        <button onclick="addToCart('slaimas', 3)">Į krepšelį</button>
+        <button onclick="addToCart(document.querySelector('[name=\'spalva\']').value, 3)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">MAŽAS</div>
         <h2>Antistresinis žaislas MINKŠTASIS KOLDŪNAS | 3 €</h2>
+        <img src="photos/limpopo.jpg">
         <button onclick="addToCart('Antistresinis žaislas MINKŠTASIS KOLDŪNAS (mažas)', 3)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">VIDUTINIS</div>
         <h2>Antistresinis žaislas MINKŠTASIS KOLDŪNAS | 7 €</h2>
+        <img src="photos/limpopo.jpg">
         <button onclick="addToCart('Antistresinis žaislas MINKŠTASIS KOLDŪNAS (vidutinis)', 7)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">DIDELIS</div>
         <h2>Antistresinis žaislas MINKŠTASIS KOLDŪNAS | 20 €</h2>
+        <img src="photos/limpopo.jpg">
         <button onclick="addToCart('Antistresinis žaislas MINKŠTASIS KOLDŪNAS (didelis)', 20)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">LABAI SKANUS</div>
@@ -45,7 +48,7 @@
             <option value="GORGAS, guminukas vaisių apvalkale, mėlynių skonio">Mėlynės</option>
             <option value="GORGAS, guminukas vaisių apvalkale, tropinių vaisių skonio">Tropiniai vaisiai</option>
         </select>
-        <button onclick="addToCart('gorgas', 1)">Į krepšelį</button>
+        <button onclick="addToCart(document.querySelector('[name=\'gskonis\']').value, 0.5)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">DIDELIS</div>
         <h2>Sviestinis sausainis su šokoladu | 2 €</h2>
@@ -68,23 +71,24 @@
             <option value="Džiovintų svirplių užkandis CRICKIES, BBQ skonio">BBQ</option>
             <option value="Džiovintų svirplių užkandis CRICKIES, paprikos skonio">Paprika</option>
         </select>
-         <button onclick="addToCart('svirpliai', 3)">Į krepšelį</button>
+         <button onclick="addToCart(document.querySelector('[name=\'skonis\']').value, 3)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">UŽPILAMI</div>
         <h2>BANGIO makaronai | 1 €</h2>
+        <img src="slamsriube.png">
         <select name ="prieskoniai">
             <option value="BANGIO užpilami makaronai">Pasirinkite prieskonius</option>
             <option value="BANGIO užpilami makaronai, su kepta vištiena">Keptos vištienos</option>
             <option value="BANGIO užpilami makaronai, sūrūs">Sūrūs</option>
             <option value="BANGIO užpilami makaronai, aštrūs">Aštrūs</option>
         </select>
-         <button onclick="addToCart('(prieskoniai)', 1)">Į krepšelį</button>
+         <button onclick="addToCart(document.querySelector('[name=\'prieskoniai\']').value, 1)">Į krepšelį</button>
         <hr />
         <h2>Nuolaidos kodas</h2>
         <h3>Nuolaidos kodas bus pritaikytas pateikus užsakymą.</h3>
         <label for="nuolaida">Nuolaidos kodas:</label>
         <input type="text" id="nuolaida" name="nuolaida" placeholder="Įrašykite nuolaidos kodą" />
-        <button onclick="addToCart('(nuolaida)', 0)">Pateikti nuolaidos kodą</button>
+        <button onclick="addToCart(document.getElementById('nuolaida').value, 0)">Pateikti nuolaidos kodą</button>
         <hr />
         <section class="cart">
     <h2>Krepšelis</h2>
