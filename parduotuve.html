@@ -28,17 +28,16 @@
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">MAŽAS</div>
         <h2>Antistresinis žaislas MINKŠTASIS KOLDŪNAS | 3 €</h2>
-        <img src="photos/limpopo.jpg">
         <button onclick="addToCart('Antistresinis žaislas MINKŠTASIS KOLDŪNAS (mažas)', 3)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">VIDUTINIS</div>
         <h2>Antistresinis žaislas MINKŠTASIS KOLDŪNAS | 7 €</h2>
-        <img src="photos/limpopo.jpg">
+        
         <button onclick="addToCart('Antistresinis žaislas MINKŠTASIS KOLDŪNAS (vidutinis)', 7)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">DIDELIS</div>
         <h2>Antistresinis žaislas MINKŠTASIS KOLDŪNAS | 20 €</h2>
-        <img src="photos/limpopo.jpg">
+        
         <button onclick="addToCart('Antistresinis žaislas MINKŠTASIS KOLDŪNAS (didelis)', 20)">Į krepšelį</button>
         <hr />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">LABAI SKANUS</div>
@@ -91,7 +90,7 @@
         <button onclick="addToCart(document.getElementById('nuolaida').value, 0)">Pateikti nuolaidos kodą</button>
         <hr />
         <section class="cart">
-    <h2>Krepšelis</h2>
+    <h2>Krepšelis (<span id="cart-count">0</span>)</h2>
     <ul id="cart-items"></ul>
     <p><strong>Iš viso:</strong> <span id="total">0</span> €</p>
 </section>
