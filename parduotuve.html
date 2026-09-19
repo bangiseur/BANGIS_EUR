@@ -86,6 +86,16 @@
         <h2>BANGIO šokoladas | 2 €</h2>
         <button onclick="addToCart('Pieniškas BANGIO šokoladas', 2)">Į krepšelį</button>
         <hr />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">SKANŪS</div>
+        <h2>BANGIO zefyrai | 2 €</h2>
+        <select name ="zefyras">
+            <option value="BANGIO zefyrai">Pasirinkite skonį</option>
+            <option value="BANGIO zefyrai, aviečių skonio">Avietės</option>
+            <option value="BANGIO zefyrai, vanilės skonio">Vanilė</option>
+            <option value="BANGIO zefyrai, aplieti šokoladu">Aplieti šokoladu</option>
+        </select>
+        <button onclick="addToCart(document.querySelector('[name=\'zefyras\']').value, 0.5)">Į krepšelį</button>
+        <hr />
         <h2>Nuolaidos kodas</h2>
         <h3>Nuolaidos kodas bus pritaikytas pateikus užsakymą.</h3>
         <label for="nuolaida">Nuolaidos kodas:</label>
