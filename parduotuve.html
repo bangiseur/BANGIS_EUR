@@ -127,11 +127,11 @@
         </select>
         <button onclick="addToCart(document.querySelector('[name=\'žol\']').value, 2)">Į krepšelį</button>
         <hr />
-        <h2>Nuolaidos kodas</h2>
-        <h3>Nuolaidos kodas bus pritaikytas pateikus užsakymą.</h3>
-        <label for="nuolaida">Nuolaidos kodas:</label>
-        <input type="text" id="nuolaida" name="nuolaida" placeholder="Įrašykite nuolaidos kodą" />
-        <button onclick="addToCart(document.getElementById('nuolaida').value, 0)">Pateikti nuolaidos kodą</button>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">SUASMENINTAS</div>
+        <h2>Trintukas | 1 €</h2>
+        <label for="trnt">Trintuko tekstas:</label>
+        <input type="text" id="trnt" name="trnt" placeholder="Įrašykite trintuko tekstą" />
+        <button onclick="addToCart('Suasmenintas trintukas su tekstu: ' + document.getElementById('trnt').value, 1)">Į krepšelį</button>
         <hr />
         <section class="cart">
     <h2>Krepšelis (<span id="cart-count">0</span>)</h2>
