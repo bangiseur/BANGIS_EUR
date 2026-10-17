@@ -133,6 +133,11 @@
         <input type="text" id="trnt" name="trnt" placeholder="Įrašykite trintuko tekstą" />
         <button onclick="addToCart('Suasmenintas trintukas su tekstu: ' + document.getElementById('trnt').value, 1)">Į krepšelį</button>
         <hr />
+        <h2>Nuolaidos kodas</h2>
+        <h3>Nuolaidos kodas bus pritaikytas pateikus užsakymą.</h3>
+        <label for="nuolaida">Nuolaidos kodas:</label>
+        <input type="text" id="nuolaida" name="nuolaida" placeholder="Įrašykite nuolaidos kodą" />
+        <button onclick="addToCart(document.getElementById('nuolaida').value, 0)">Pateikti nuolaidos kodą</button>
         <section class="cart">
     <h2>Krepšelis (<span id="cart-count">0</span>)</h2>
     <ul id="cart-items"></ul>
