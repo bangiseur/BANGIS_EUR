@@ -117,3 +117,19 @@ function sendComment() {
         console.error(err);
     });
 }
+
+function reg() {
+    const email = document.getElementById("bum").value;
+    const comment = "Registravosi į idėjų generavimą"
+
+    emailjs.send("service_prjshlp", "template_qoj6hgv", {
+        email: email,
+        comment: comment
+    }).then(() => {
+        alert("Registracijos anketa išsiųsta!");
+        document.getElementById("bum").value = "";
+    }, (err) => {
+        alert("Klaida siunčiant registracijos anketą");
+        console.error(err);
+    });
+}
