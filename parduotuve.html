@@ -126,6 +126,8 @@
         </select>
         <button onclick="addToCart(document.querySelector('[name=\'žol\']').value, 2)">Į krepšelį</button>
         <hr />
+        <h2>+ Džiovinti vaisiai į arbatą (+ 1.50 €)</h2>
+        <button onclick="addToCart('+ Džiovinti vaisiai į arbatą', 1.5)">Pridėti džiovintų vaisių</button>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">PUIKUS</div>
         <h2>Suasmenintas trintukas | 1 €</h2>
         <label for="trnt">Trintuko tekstas:</label>
@@ -187,6 +189,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">RANKŲ DARBO</div>
         <h2>Sąsiuvinis | 0,50 €</h2>
         <button onclick="addToCart('Rankų darbo sąsiuvinis', 0.5)">Į krepšelį</button>
+        <hr />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">UŽTAMSINTI</div>
+        <h2>Akiniai nuo saulės | 10 €</h2>
+        <button onclick="addToCart('Akiniai nuo saulės', 10)">Į krepšelį</button>
+        <hr />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">KOKYBIŠKAS</div>
+        <h2>Termosas su  pasirinktu gėrimu | 15 €</h2>
+        <select name ="gogalas">
+            <option value="Termosas su gėrimu">Pasirinkite gėrimą</option>
+            <option value="Termosas su čiobrelių arbata">Čiobrelių arbata</option>
+            <option value="Termosas su vaisių glotnučiu">Vaisių glotnutis</option>
+        </select>
+         <button onclick="addToCart(document.querySelector('[name=\'gogalas\']').value, 5)">Į krepšelį</button>
         <hr />
         <h2>Nuolaidos kodas</h2>
         <h3>Nuolaidos kodas bus pritaikytas pateikus užsakymą.</h3>
