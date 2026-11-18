@@ -180,6 +180,12 @@
         <h2>BANGIO obuolių sūris | 3 €</h2>
         <button onclick="addToCart('BANGIO obuolių sūris (1 KG)', 3)">Į krepšelį</button>
         <hr />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; } .temperature { width: 64px; height: 38px; display: flex; align-items: center; justify-content: center; background: #f5faf0; border: 1px solid #dcecD2; border-radius: 10px; color: #4c9d2a; font-size: 16px; font-weight: 400; line-height: 1; box-sizing: border-box; } </style> <div class="temperature">PAAUKOKITE!</div>
+        <h2>Arbatpinigiai vėžliams</h2>
+        <label for="suma">Arbatpinigių suma EUR (bent 1 EUR):</label>
+        <input type="number" id="suma" name="suma" min="1">
+        <button onclick="addToCart('Arbatpinigiai vėžliams', document.getElementById('suma').value)">AUKOTI</button>
+        <hr />
         <h2>Nuolaidos kodas</h2>
         <h3>Nuolaidos kodas bus pritaikytas pateikus užsakymą.</h3>
         <label for="nuolaida">Nuolaidos kodas:</label>
